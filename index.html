@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+    <title>Kalkulator</title>
+<script>
+   
+	function oblicz(){
+    var a = document.getElementById("a").value;
+    a = parseFloat(a);
+    var wynik = 680/a;
+
+    document.getElementById("wynik").innerHTML = wynik.toFixed(1) ;
+}
+</script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<center>
+<h1><strong>Ile razy zmieściłbyś się w najgrubszej osobie świata?</strong></h1>
+<h2>
+        <label for ="a" >Podaj swoją wagę w kg: <label><br><br>
+        <input type="text" dir="rtl" id="a" class="wejście">
+        <input type="button" value="Oblicz" onclick="oblicz()"/> 
+
+
+</h2>
+   <h3>Z tylu osób: 
+        <div class = "wynik" id="wynik">0 </div>
+    </h3>
+
+
+</body>
